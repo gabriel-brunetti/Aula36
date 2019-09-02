@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Cliente;
 
 class PagesController extends Controller
 {
@@ -27,6 +28,7 @@ class PagesController extends Controller
         // passando uma variável para a view: ['nomeDaVariavelNaView'=>$variavel]
         // na view o 'nomeDaVariavelNaView' será a $nomeDaVariavelnaView !
     }
+    
     public function getContatos(){
         return view('contatos');
     }
