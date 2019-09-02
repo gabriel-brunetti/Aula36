@@ -11,11 +11,8 @@ class PagesController extends Controller
     }
 
     public function getClientes($pos){
-        $clientes = [
-            'SBT',
-            'Record',
-            'Rede Globo'
-        ];
+
+        $clientes = Cliente::all();
 
         $clienteDoMes = $clientes[$pos];
 
